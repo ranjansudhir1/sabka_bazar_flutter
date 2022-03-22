@@ -1,27 +1,26 @@
 import 'package:flutter/material.dart';
-import 'package:sabka_bazar/registeration/Registeration.dart';
 
-class Login extends StatelessWidget {
-  const Login({Key? key}) : super(key: key);
+class Registration extends StatelessWidget {
+  const Registration({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "Login",
+      title: "Signup",
       home: Scaffold(
         appBar: AppBar(
-          title: const Text("Login"),
+          title: const Text("Signup"),
           backgroundColor: Colors.pink,
         ),
-        body: const LoginForm(),
+        body: const RegistrationForm(),
       ),
     );
   }
 }
 
-class LoginForm extends StatelessWidget {
-  const LoginForm({Key? key}) : super(key: key);
+class RegistrationForm extends StatelessWidget {
+  const RegistrationForm({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -45,10 +44,28 @@ class LoginForm extends StatelessWidget {
             child: const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 20, vertical: 0),
                 child: Text(
-                  "Get access to your Orders, Wishlist and Recommendations",
+                  "We do not share your personal details with anyone",
                   textAlign: TextAlign.center,
                   style: TextStyle(fontWeight: FontWeight.bold),
                 )),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            child: TextFormField(
+              decoration: const InputDecoration(
+                border: UnderlineInputBorder(),
+                labelText: 'First Name',
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            child: TextFormField(
+              decoration: const InputDecoration(
+                border: UnderlineInputBorder(),
+                labelText: 'Last Name',
+              ),
+            ),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
@@ -69,6 +86,16 @@ class LoginForm extends StatelessWidget {
               ),
             ),
           ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            child: TextFormField(
+              obscureText: true,
+              decoration: const InputDecoration(
+                border: UnderlineInputBorder(),
+                labelText: 'Confirm Password',
+              ),
+            ),
+          ),
           Container(
             margin: const EdgeInsets.only(right: 20.0, left: 20.0, top: 10.0),
             child: Center(
@@ -80,25 +107,10 @@ class LoginForm extends StatelessWidget {
                       primary: Colors.white, // foreground
                     ),
                     onPressed: () {},
-                    child: const Text("Login")),
+                    child: const Text("Signup")),
               ),
             ),
           ),
-          GestureDetector(
-            child: const Text(
-              'Click here to registered',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  decoration: TextDecoration.underline),
-            ),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const Registration()),
-              );
-            },
-          )
         ],
       ),
     );
