@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sabka_bazar/cart/Cart.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -16,11 +17,16 @@ class Home extends StatelessWidget {
           ),
           actions: [
             SizedBox(
-              width: 30,
-              child: Image.asset(
-                'assets/cart.png',
-              ),
-            ),
+                width: 30,
+                child: GestureDetector(
+                  child: Image.asset(
+                    'assets/cart.png',
+                  ),
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => const Cart()));
+                  },
+                )),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Container(
@@ -40,21 +46,6 @@ class Home extends StatelessWidget {
     );
   }
 }
-/* @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: "Home",
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text("Home"),
-          backgroundColor: Colors.white,
-        ),
-        body: const HomePage(),
-      ),
-    );
-  }
-}
-*/
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
