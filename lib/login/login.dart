@@ -79,7 +79,16 @@ class LoginForm extends StatelessWidget {
                     child: const Text("Login")),
               ),
             ),
+          ),
+          const Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Text(
+              'Click here to registered',
+              textAlign: TextAlign.center,
+              style: TextStyle(fontWeight: FontWeight.bold,decoration: TextDecoration.underline),
+            ),
           )
+
         ],
       ),
     );
