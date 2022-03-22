@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sabka_bazar/home/home.dart';
 import 'package:sabka_bazar/registeration/Registeration.dart';
 
 class Login extends StatelessWidget {
@@ -79,7 +80,12 @@ class LoginForm extends StatelessWidget {
                       backgroundColor: Colors.pink,
                       primary: Colors.white, // foreground
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Home()));
+                    },
                     child: const Text("Login")),
               ),
             ),
