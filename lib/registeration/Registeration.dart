@@ -12,6 +12,10 @@ class Registration extends StatelessWidget {
         appBar: AppBar(
           title: const Text("Signup"),
           backgroundColor: Colors.pink,
+          leading: IconButton(
+            icon: const Icon(Icons.arrow_back, color: Colors.white),
+            onPressed: () => Navigator.of(context).pop(),
+          ),
         ),
         body: const RegistrationForm(),
       ),
