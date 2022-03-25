@@ -10,7 +10,7 @@
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		cdxdAJC6yw5AWRHDsosCg+gE50k=
+		ldyCV4bcWf1Pxnp6wIttphhPUw8=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -18,11 +18,19 @@
 		</data>
 		<key>flutter_assets/NOTICES.Z</key>
 		<data>
-		lkxtbPisqsSAnL4f508Bu17EKqY=
+		Rou0l4aeeMJeZJ8rAemtkpv52Jo=
+		</data>
+		<key>flutter_assets/assets/cart.png</key>
+		<data>
+		4M02NDKmwHxmiIuOvN2ZgQRgSG8=
 		</data>
 		<key>flutter_assets/assets/logo.png</key>
 		<data>
 		S6fbdFw/7RIyffUMP8gWtfrebsA=
+		</data>
+		<key>flutter_assets/assets/vegetables_basket.png</key>
+		<data>
+		r5T9b9o/64LwTRJhYpAQy/L3kPk=
 		</data>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<data>
@@ -34,7 +42,7 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		+U/aQa0YmEPPG6uCFhBHggd8BTU=
+		m9sPy6LhFGMXtKqUWpVyLKQls0c=
 		</data>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -51,11 +59,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cdxdAJC6yw5AWRHDsosCg+gE50k=
+			ldyCV4bcWf1Pxnp6wIttphhPUw8=
 			</data>
 			<key>hash2</key>
 			<data>
-			7TEZNOZPCzw8clooQWO9ay5l6SrL2gNDcR86I7T48+8=
+			01n+56OQfigISaK1D+Zivx4BNCC+5oDfCrUcye+IEGM=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -73,11 +81,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lkxtbPisqsSAnL4f508Bu17EKqY=
+			Rou0l4aeeMJeZJ8rAemtkpv52Jo=
 			</data>
 			<key>hash2</key>
 			<data>
-			6hR/DIf9XzSxcLGt3NrKLzET0Fgz25iuJISEK3ZsPEw=
+			/riYBfVOFi6GIuvTpuVRIqT9WsbcjK0fGCSdN6zmHow=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/cart.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4M02NDKmwHxmiIuOvN2ZgQRgSG8=
+			</data>
+			<key>hash2</key>
+			<data>
+			wZtVwjYeBqeWYgSqMh+vLKwA9IXA8Fm60+dn5+DMiog=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/logo.png</key>
@@ -89,6 +108,17 @@
 			<key>hash2</key>
 			<data>
 			7CumUh6Tf6YcUfKzHDaZVhmSiqk8qnEyUCsBpZH3ogo=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/vegetables_basket.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			r5T9b9o/64LwTRJhYpAQy/L3kPk=
+			</data>
+			<key>hash2</key>
+			<data>
+			CeFSVYPgvm/yPzXShA4furKvkKUQVJkspXnawhofVTU=
 			</data>
 		</dict>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
@@ -117,11 +147,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+U/aQa0YmEPPG6uCFhBHggd8BTU=
+			m9sPy6LhFGMXtKqUWpVyLKQls0c=
 			</data>
 			<key>hash2</key>
 			<data>
-			O8W9tFTNfOyv71Z2T2S3khr+U9JdZd26ByUUktyeJMU=
+			vpR5C2CnVg3umYaGasUMAbOkO050pwPrkhU9lFqtzg0=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>

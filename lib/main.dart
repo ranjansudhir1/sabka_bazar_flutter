@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:sabka_bazar/services/ApiService.dart';
 
 import 'login/login.dart';
 
@@ -26,10 +28,18 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
-    );
+       //home: const MyHomePage(title: 'Flutter Demo Home Page'),
+        home: MultiRepositoryProvider(
+          providers: [
+            RepositoryProvider(
+              create: (context) => ApiService(),
+            ),
+          ],
+          child: const MyHomePage(title: 'Flutter Demo Home Page'),
+        ));
   }
 }
+
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key, required this.title}) : super(key: key);

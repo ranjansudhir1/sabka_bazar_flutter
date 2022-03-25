@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:sabka_bazar/bloc/UserDeatilsBloc.dart';
 import 'package:sabka_bazar/home/home.dart';
 import 'package:sabka_bazar/registeration/Registeration.dart';
 
@@ -84,7 +86,7 @@ class LoginForm extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const Home()));
+                              builder: (context) => BlocProvider(create: (context) => UserDetailsBloc(),child: const Home()),));
                     },
                     child: const Text("Login")),
               ),
