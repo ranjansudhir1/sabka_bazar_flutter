@@ -1,11 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sabka_bazar/services/ApiService.dart';
+import 'package:sabka_bazar/testbloc/app.dart';
+import 'package:sabka_bazar/testbloc/todo_bloc_observer.dart';
 
 import 'login/login.dart';
 
-void main() {
+/*void main() {
   runApp(Login());
+}*/
+
+void main() async {
+  BlocOverrides.runZoned(
+        () => runApp(const App()),
+    blocObserver: TodoBlocObserver(),
+  );
 }
 
 class MyApp extends StatelessWidget {
