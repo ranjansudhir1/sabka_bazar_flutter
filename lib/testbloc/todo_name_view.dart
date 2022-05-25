@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:sabka_bazar/testbloc/features/todo_bloc.dart';
 
 import 'features/todo_cubit.dart';
 import 'features/todo_state.dart';
@@ -12,7 +13,7 @@ class TodoNameView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text("List of Todo"),),
-      body: Center(child : BlocBuilder<TodoCubit, TodoState>(
+      body: Center(child : BlocBuilder<TodoBloc, TodoState>(
         builder: (context, state) {
           if (state is TodoInitial) {
             context.read<TodoCubit>().getData();

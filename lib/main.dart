@@ -1,21 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:sabka_bazar/cubit/sample_color.dart';
 import 'package:sabka_bazar/services/ApiService.dart';
 import 'package:sabka_bazar/testbloc/app.dart';
 import 'package:sabka_bazar/testbloc/todo_bloc_observer.dart';
 
 import 'login/login.dart';
 
-/*void main() {
-  runApp(Login());
-}*/
+void main() {
+  //runApp(Login());
+  runApp(const SampleColor());
+}
 
-void main() async {
+/*void main() async {
   BlocOverrides.runZoned(
         () => runApp(const App()),
     blocObserver: TodoBlocObserver(),
   );
-}
+}*/
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
