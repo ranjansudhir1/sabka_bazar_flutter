@@ -25,27 +25,31 @@ class ColorView extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocBuilder<ColorCubit, ColorState>(
       builder: (context, state) {
-        return Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(10.0),
-              child: Text(state.num),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: TextButton(
-                style: TextButton.styleFrom(
-                  backgroundColor: Colors.pink,
-                  primary: Colors.white,
-                ),
-                child: const Text("Press"),
-                onPressed: () {
-                  context.read<ColorCubit>().changeNum();
-                },
+        if (state is ColorInitial) {
+          return Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Text(state.num),
               ),
-            ),
-          ],
-        );
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: Colors.pink,
+                    primary: Colors.white,
+                  ),
+                  child: const Text("Press"),
+                  onPressed: () {
+                    context.read<ColorCubit>().changeNum();
+                  },
+                ),
+              ),
+            ],
+          );
+        } else {
+          return const CircularProgressIndicator();
+        }
       },
     );
   }

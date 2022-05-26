@@ -7,7 +7,8 @@ part 'color_state.dart';
 class ColorCubit extends Cubit<ColorState> {
   ColorCubit() : super(const ColorInitial());
 
-  void changeNum(){
+  void changeNum() async{
+    await Future.delayed(Duration(seconds: 20));
     emit(const ColorFinal("2"));
   }
 }
