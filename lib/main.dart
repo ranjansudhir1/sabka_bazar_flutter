@@ -2,14 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sabka_bazar/cubit/sample_color.dart';
 import 'package:sabka_bazar/services/ApiService.dart';
+import 'package:sabka_bazar/setstate/sample_one.dart';
+import 'package:sabka_bazar/setstate/sample_page.dart';
 import 'package:sabka_bazar/testbloc/app.dart';
 import 'package:sabka_bazar/testbloc/todo_bloc_observer.dart';
 
 import 'login/login.dart';
+import 'newsetstate/main_page.dart';
 
 void main() {
   //runApp(Login());
-  runApp(const SampleColor());
+  //runApp(const SampleColor());
+  //runApp(const SamplePage());
+  //runApp(const SampleOne());
+  runApp(const MainPage());
 }
 
 /*void main() async {
